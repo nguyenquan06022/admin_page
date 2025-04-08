@@ -5,10 +5,15 @@ import InputGroup from "react-bootstrap/InputGroup";
 
 function Header() {
   return (
-    <div style={{ padding: 10 }}>
+    <div
+      style={{
+        padding: 10,
+        borderBottom: "1px solid rgba(128, 128, 128, 0.3)",
+      }}
+    >
       <Row>
         <Col md={6} style={{ display: "flex", alignItems: "center" }}>
-          <h3 style={{ color: "rgb(240, 93, 143)", margin: 0 }}>Dashboard</h3>
+          <h3 style={{ color: "rgb(244, 75, 134)", margin: 0 }}>Dashboard</h3>
         </Col>
         <Col md={6}>
           <Row>

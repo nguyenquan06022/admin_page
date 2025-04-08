@@ -1,51 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
 function MyNav() {
+  const [activeItem, setActiveItem] = useState("Dashboard");
+
+  const navItems = [
+    { name: "Dashboard", icon: "images/Squares four 1.png", to: "/" },
+    { name: "Projects", icon: "images/Folder.png", to: "/project" },
+    { name: "Team", icon: "images/Groups.png", to: "/team" },
+    { name: "Analytics", icon: "images/Pie chart.png", to: "/analytics" },
+    { name: "Message", icon: "images/Chat.png", to: "/message" },
+    { name: "Integrations", icon: "images/Code.png", to: "/integrations" },
+  ];
+
+  const getLinkStyle = (itemName) => ({
+    paddingLeft: "0",
+    backgroundColor: activeItem === itemName ? "#F44B86" : "transparent",
+    color: activeItem === itemName ? "white" : "grey",
+    borderRadius: 6,
+    padding: "8px 10px",
+    marginBottom: 5,
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    gap: 8,
+    fontWeight: 500,
+    textDecoration: "none",
+  });
+
   return (
-    <div style={{ padding: 10 }}>
+    <div>
       <div>
         <img src="images/Image 1858.png" alt="" />
       </div>
       <Nav className="flex-column">
-        <Nav.Link as={Link} to={"/"} style={{ paddingLeft: "0" }}>
-          <div style={{ display: "flex", alignItems: "center", color: "grey" }}>
-            <img src="images/Squares four 1.png" alt="" />
-            Dashboard
-          </div>
-        </Nav.Link>
-        <Nav.Link as={Link} to={"/"} style={{ paddingLeft: "0" }}>
-          <div style={{ display: "flex", alignItems: "center", color: "grey" }}>
-            <img src="images/Folder.png" alt="" />
-            Projects
-          </div>
-        </Nav.Link>
-        <Nav.Link as={Link} to={"/"} style={{ paddingLeft: "0" }}>
-          <div style={{ display: "flex", alignItems: "center", color: "grey" }}>
-            <img src="images/Groups.png" alt="" />
-            Team
-          </div>
-        </Nav.Link>
-        <Nav.Link as={Link} to={"/"} style={{ paddingLeft: "0" }}>
-          <div style={{ display: "flex", alignItems: "center", color: "grey" }}>
-            <img src="images/Pie chart.png" alt="" />
-            Analytics
-          </div>
-        </Nav.Link>
-        <Nav.Link as={Link} to={"/"} style={{ paddingLeft: "0" }}>
-          <div style={{ display: "flex", alignItems: "center", color: "grey" }}>
-            <img src="images/Chat.png" alt="" />
-            Message
-          </div>
-        </Nav.Link>
-        <Nav.Link as={Link} to={"/"} style={{ paddingLeft: "0" }}>
-          <div style={{ display: "flex", alignItems: "center", color: "grey" }}>
-            <img src="images/Code.png" alt="" />
-            Integrations
-          </div>
-        </Nav.Link>
+        {navItems.map((item) => (
+          <Nav.Link
+            key={item.name}
+            as={Link}
+            to={item.to}
+            onClick={() => setActiveItem(item.name)}
+            style={getLinkStyle(item.name)}
+          >
+            <img src={item.icon} alt="" />
+            {item.name}
+          </Nav.Link>
+        ))}
       </Nav>
+
       <div
         style={{
           backgroundColor: "rgb(239, 246, 255)",
@@ -57,6 +60,8 @@ function MyNav() {
         }}
       >
         <img src="images/Group.png" alt="" />
+        <br />
+        <h4 style={{ textAlign: "center" }}>V2.0 is available</h4>
         <br />
         <button
           className="btn"

@@ -13,7 +13,13 @@ function App() {
         }}
       >
         <Row>
-          <Col md={3}>
+          <Col
+            md={3}
+            style={{
+              borderRight: "1px solid rgba(128, 128, 128, 0.3)",
+              padding: 10,
+            }}
+          >
             <MyNav></MyNav>
           </Col>
           <Col md={9}>
