@@ -1,0 +1,8 @@
+{
+  "/api/turnover": "/turnover",
+  "/api/profit": "/profit",
+  "/api/new-customer": "/newCustomer",
+  "/api/customers": "/customers",
+  "/api/customers/add": "/customers",
+  "/api/customers/edit/:id": "/customers/:id"
+}

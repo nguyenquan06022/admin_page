@@ -1,0 +1,598 @@
+{
+  "turnover": [
+    {
+      "id": 1,
+      "value": 92.405,
+      "changePercentage": 5.39,
+      "period": "period of change",
+      "currency": "USD"
+    }
+  ],
+  "profit": [
+    {
+      "id": 1,
+      "value": 32.218,
+      "changePercentage": 5.39,
+      "period": "period of change",
+      "currency": "USD"
+    }
+  ],
+  "newCustomer": [
+    {
+      "id": 1,
+      "value": 298,
+      "changePercentage": 6.84,
+      "period": "period of change",
+      "currency": "USD"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Emily Wilsons",
+      "company": "Alpha Solutions",
+      "orderValue": 767,
+      "orderDate": "2023-04-27",
+      "status": "Completed",
+      "avatar": "images/Avatar (4).png"
+    },
+    {
+      "id": 2,
+      "name": "John Davis",
+      "company": "Alpha Solutions",
+      "orderValue": 977,
+      "orderDate": "2023-03-07",
+      "status": "New",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 3,
+      "name": "Emma Jones",
+      "company": "BlueWave",
+      "orderValue": 422,
+      "orderDate": "2023-03-24",
+      "status": "In-progress",
+      "avatar": "images/Avatar (4).png"
+    },
+    {
+      "id": 4,
+      "name": "Michael Lee",
+      "company": "TechNova",
+      "orderValue": 699,
+      "orderDate": "2023-03-28",
+      "status": "Completed",
+      "avatar": "images/Avatar (4).png"
+    },
+    {
+      "id": 5,
+      "name": "Olivia Smith",
+      "company": "BlueWave",
+      "orderValue": 640,
+      "orderDate": "2023-07-30",
+      "status": "New",
+      "avatar": "images/Avatar (2).png"
+    },
+    {
+      "id": 6,
+      "name": "John Miller",
+      "company": "TechNova",
+      "orderValue": 597,
+      "orderDate": "2023-05-24",
+      "status": "Completed",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 7,
+      "name": "Emily Miller",
+      "company": "Alpha Solutions",
+      "orderValue": 768,
+      "orderDate": "2023-03-16",
+      "status": "In-progress",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 8,
+      "name": "John Lee",
+      "company": "DataStream Inc.",
+      "orderValue": 945,
+      "orderDate": "2023-04-06",
+      "status": "In-progress",
+      "avatar": "images/Avatar (2).png"
+    },
+    {
+      "id": 9,
+      "name": "James Williams",
+      "company": "TechNova",
+      "orderValue": 598,
+      "orderDate": "2023-05-22",
+      "status": "New",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 10,
+      "name": "John Davis",
+      "company": "FlowRush",
+      "orderValue": 924,
+      "orderDate": "2023-07-03",
+      "status": "In-progress",
+      "avatar": "images/Avatar (2).png"
+    },
+    {
+      "id": 11,
+      "name": "Sophia Miller",
+      "company": "OmniTech",
+      "orderValue": 940,
+      "orderDate": "2023-05-31",
+      "status": "Completed",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 12,
+      "name": "Olivia Miller",
+      "company": "Quantum Systems",
+      "orderValue": 619,
+      "orderDate": "2023-08-27",
+      "status": "New",
+      "avatar": "images/Avatar (5).png"
+    },
+    {
+      "id": 13,
+      "name": "James Jones",
+      "company": "NeonTech",
+      "orderValue": 955,
+      "orderDate": "2023-05-09",
+      "status": "In-progress",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 14,
+      "name": "Emily Brown",
+      "company": "NextGen Corp",
+      "orderValue": 414,
+      "orderDate": "2023-09-23",
+      "status": "New",
+      "avatar": "images/Avatar (2).png"
+    },
+    {
+      "id": 15,
+      "name": "John Jones",
+      "company": "OmniTech",
+      "orderValue": 328,
+      "orderDate": "2023-02-13",
+      "status": "Completed",
+      "avatar": "images/Avatar 313.png"
+    },
+    {
+      "id": 16,
+      "name": "Sophia Garcia",
+      "company": "NeonTech",
+      "orderValue": 498,
+      "orderDate": "2023-09-30",
+      "status": "In-progress",
+      "avatar": "images/Avatar (3).png"
+    },
+    {
+      "id": 17,
+      "name": "Daniel Lee",
+      "company": "TechNova",
+      "orderValue": 669,
+      "orderDate": "2023-02-15",
+      "status": "In-progress",
+      "avatar": "images/Avatar (5).png"
+    },
+    {
+      "id": 18,
+      "name": "Emma Smith",
+      "company": "BlueWave",
+      "orderValue": 333,
+      "orderDate": "2023-09-10",
+      "status": "In-progress",
+      "avatar": "images/Avatar (4).png"
+    },
+    {
+      "id": 19,
+      "name": "Michael Smith",
+      "company": "OmniTech",
+      "orderValue": 603,
+      "orderDate": "2023-10-08",
+      "status": "New",
+      "avatar": "images/Avatar (3).png"
+    },
+    {
+      "id": 20,
+      "name": "James Lee",
+      "company": "OmniTech",
+      "orderValue": 793,
+      "orderDate": "2023-05-09",
+      "status": "Completed",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 21,
+      "name": "Michael Lee",
+      "company": "BlueWave",
+      "orderValue": 492,
+      "orderDate": "2023-08-22",
+      "status": "New",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 22,
+      "name": "Emily Miller",
+      "company": "DataStream Inc.",
+      "orderValue": 338,
+      "orderDate": "2023-07-25",
+      "status": "New",
+      "avatar": "images/Avatar (3).png"
+    },
+    {
+      "id": 23,
+      "name": "David Garcia",
+      "company": "NeonTech",
+      "orderValue": 598,
+      "orderDate": "2023-07-06",
+      "status": "In-progress",
+      "avatar": "images/Avatar (4).png"
+    },
+    {
+      "id": 24,
+      "name": "Sarah Garcia",
+      "company": "BlueWave",
+      "orderValue": 963,
+      "orderDate": "2023-05-15",
+      "status": "In-progress",
+      "avatar": "images/Avatar 313.png"
+    },
+    {
+      "id": 25,
+      "name": "Michael Garcia",
+      "company": "NeonTech",
+      "orderValue": 440,
+      "orderDate": "2023-06-18",
+      "status": "New",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 26,
+      "name": "John Jones",
+      "company": "NextGen Corp",
+      "orderValue": 593,
+      "orderDate": "2023-08-02",
+      "status": "Completed",
+      "avatar": "images/Avatar (4).png"
+    },
+    {
+      "id": 27,
+      "name": "James Smith",
+      "company": "Quantum Systems",
+      "orderValue": 316,
+      "orderDate": "2023-10-26",
+      "status": "In-progress",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 28,
+      "name": "Emma Lee",
+      "company": "OmniTech",
+      "orderValue": 351,
+      "orderDate": "2023-09-25",
+      "status": "New",
+      "avatar": "images/Avatar (4).png"
+    },
+    {
+      "id": 29,
+      "name": "Sophia Lee",
+      "company": "Alpha Solutions",
+      "orderValue": 451,
+      "orderDate": "2023-05-01",
+      "status": "New",
+      "avatar": "images/Avatar (3).png"
+    },
+    {
+      "id": 30,
+      "name": "David Wilson",
+      "company": "NeonTech",
+      "orderValue": 660,
+      "orderDate": "2023-07-31",
+      "status": "In-progress",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 31,
+      "name": "David Brown",
+      "company": "NeonTech",
+      "orderValue": 488,
+      "orderDate": "2023-02-28",
+      "status": "Completed",
+      "avatar": "images/Avatar (5).png"
+    },
+    {
+      "id": 32,
+      "name": "James Brown",
+      "company": "Alpha Solutions",
+      "orderValue": 805,
+      "orderDate": "2023-02-05",
+      "status": "New",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 33,
+      "name": "John Johnson",
+      "company": "NeonTech",
+      "orderValue": 637,
+      "orderDate": "2023-04-13",
+      "status": "In-progress",
+      "avatar": "images/Avatar (3).png"
+    },
+    {
+      "id": 34,
+      "name": "Sophia Lee",
+      "company": "DataStream Inc.",
+      "orderValue": 571,
+      "orderDate": "2023-03-30",
+      "status": "New",
+      "avatar": "images/Avatar (2).png"
+    },
+    {
+      "id": 35,
+      "name": "Emily Brown",
+      "company": "Alpha Solutions",
+      "orderValue": 320,
+      "orderDate": "2023-10-21",
+      "status": "In-progress",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 36,
+      "name": "Sophia Williams",
+      "company": "TechNova",
+      "orderValue": 616,
+      "orderDate": "2023-02-21",
+      "status": "In-progress",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 37,
+      "name": "Sophia Jones",
+      "company": "NextGen Corp",
+      "orderValue": 389,
+      "orderDate": "2023-08-11",
+      "status": "In-progress",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 38,
+      "name": "Sophia Brown",
+      "company": "TechNova",
+      "orderValue": 1000,
+      "orderDate": "2023-07-16",
+      "status": "Completed",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 39,
+      "name": "Emily Davis",
+      "company": "Alpha Solutions",
+      "orderValue": 304,
+      "orderDate": "2023-10-11",
+      "status": "Completed",
+      "avatar": "images/Avatar (2).png"
+    },
+    {
+      "id": 40,
+      "name": "David Lee",
+      "company": "Alpha Solutions",
+      "orderValue": 580,
+      "orderDate": "2023-01-24",
+      "status": "In-progress",
+      "avatar": "images/Avatar (5).png"
+    },
+    {
+      "id": 41,
+      "name": "Sophia Miller",
+      "company": "OmniTech",
+      "orderValue": 350,
+      "orderDate": "2023-05-16",
+      "status": "New",
+      "avatar": "images/Avatar (5).png"
+    },
+    {
+      "id": 42,
+      "name": "Emma Davis",
+      "company": "NeonTech",
+      "orderValue": 727,
+      "orderDate": "2023-02-20",
+      "status": "In-progress",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 43,
+      "name": "Sarah Smith",
+      "company": "TechNova",
+      "orderValue": 816,
+      "orderDate": "2023-05-16",
+      "status": "New",
+      "avatar": "images/Avatar (3).png"
+    },
+    {
+      "id": 44,
+      "name": "Michael Johnson",
+      "company": "TechNova",
+      "orderValue": 693,
+      "orderDate": "2023-09-17",
+      "status": "Completed",
+      "avatar": "images/Avatar (5).png"
+    },
+    {
+      "id": 45,
+      "name": "David Smith",
+      "company": "NextGen Corp",
+      "orderValue": 726,
+      "orderDate": "2023-02-17",
+      "status": "In-progress",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 46,
+      "name": "Daniel Williams",
+      "company": "Alpha Solutions",
+      "orderValue": 621,
+      "orderDate": "2023-06-15",
+      "status": "In-progress",
+      "avatar": "images/Avatar (3).png"
+    },
+    {
+      "id": 47,
+      "name": "Daniel Jones",
+      "company": "TechNova",
+      "orderValue": 939,
+      "orderDate": "2023-07-30",
+      "status": "New",
+      "avatar": "images/Avatar 313.png"
+    },
+    {
+      "id": 48,
+      "name": "Sarah Davis",
+      "company": "FlowRush",
+      "orderValue": 428,
+      "orderDate": "2023-09-18",
+      "status": "New",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 49,
+      "name": "Emma Smith",
+      "company": "Quantum Systems",
+      "orderValue": 666,
+      "orderDate": "2023-08-17",
+      "status": "Completed",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 50,
+      "name": "Michael Johnson",
+      "company": "BlueWave",
+      "orderValue": 617,
+      "orderDate": "2023-06-28",
+      "status": "In-progress",
+      "avatar": "images/Avatar (3).png"
+    },
+    {
+      "id": 51,
+      "name": "Michael Johnson",
+      "company": "Quantum Systems",
+      "orderValue": 980,
+      "orderDate": "2023-02-06",
+      "status": "Completed",
+      "avatar": "images/Avatar (2).png"
+    },
+    {
+      "id": 52,
+      "name": "David Smith",
+      "company": "OmniTech",
+      "orderValue": 967,
+      "orderDate": "2023-04-22",
+      "status": "New",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 53,
+      "name": "Olivia Lee",
+      "company": "DataStream Inc.",
+      "orderValue": 803,
+      "orderDate": "2023-03-03",
+      "status": "In-progress",
+      "avatar": "images/Avatar (5).png"
+    },
+    {
+      "id": 54,
+      "name": "David Garcia",
+      "company": "DataStream Inc.",
+      "orderValue": 492,
+      "orderDate": "2023-08-24",
+      "status": "New",
+      "avatar": "images/Avatar (2).png"
+    },
+    {
+      "id": 55,
+      "name": "Emma Williams",
+      "company": "NeonTech",
+      "orderValue": 798,
+      "orderDate": "2023-03-29",
+      "status": "New",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 56,
+      "name": "Emily Brown",
+      "company": "BlueWave",
+      "orderValue": 588,
+      "orderDate": "2023-05-18",
+      "status": "Completed",
+      "avatar": "images/Avatar 313.png"
+    },
+    {
+      "id": 57,
+      "name": "John Lee",
+      "company": "TechNova",
+      "orderValue": 701,
+      "orderDate": "2023-04-02",
+      "status": "New",
+      "avatar": "images/Avatar (5).png"
+    },
+    {
+      "id": 58,
+      "name": "David Brown",
+      "company": "Alpha Solutions",
+      "orderValue": 529,
+      "orderDate": "2023-02-01",
+      "status": "New",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 59,
+      "name": "Daniel Smith",
+      "company": "TechNova",
+      "orderValue": 906,
+      "orderDate": "2023-09-28",
+      "status": "In-progress",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 60,
+      "name": "James Johnson",
+      "company": "TechNova",
+      "orderValue": 347,
+      "orderDate": "2023-10-28",
+      "status": "Completed",
+      "avatar": "images/Avatar.png"
+    },
+    {
+      "id": 61,
+      "name": "Daniel Davis",
+      "company": "FlowRush",
+      "orderValue": 661,
+      "orderDate": "2023-05-09",
+      "status": "New",
+      "avatar": "images/Avatar (1).png"
+    },
+    {
+      "id": 62,
+      "name": "Olivia Williams",
+      "company": "NeonTech",
+      "orderValue": 738,
+      "orderDate": "2023-07-14",
+      "status": "New",
+      "avatar": "images/Avatar (2).png"
+    },
+    {
+      "id": 63,
+      "name": "Emily Brown",
+      "company": "OmniTech",
+      "orderValue": 307,
+      "orderDate": "2023-09-30",
+      "status": "In-progress",
+      "avatar": "images/Avatar (1).png"
+    }
+  ]
+}

@@ -14,7 +14,7 @@ function App() {
       >
         <Row>
           <Col
-            md={3}
+            md={2}
             style={{
               borderRight: "1px solid rgba(128, 128, 128, 0.3)",
               padding: 10,
@@ -22,7 +22,7 @@ function App() {
           >
             <MyNav></MyNav>
           </Col>
-          <Col md={9}>
+          <Col md={10}>
             <Row>
               <Header></Header>
             </Row>

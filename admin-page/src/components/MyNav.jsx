@@ -34,6 +34,7 @@ function MyNav() {
       <div>
         <img src="images/Image 1858.png" alt="" />
       </div>
+      <br />
       <Nav className="flex-column">
         {navItems.map((item) => (
           <Nav.Link
