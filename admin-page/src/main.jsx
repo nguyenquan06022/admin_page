@@ -9,6 +9,7 @@ import Integrations from "./page/Integrations.jsx";
 import Message from "./page/Message.jsx";
 import Project from "./page/Project.jsx";
 import Team from "./page/Team.jsx";
+import "react-toastify/dist/ReactToastify.css";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>

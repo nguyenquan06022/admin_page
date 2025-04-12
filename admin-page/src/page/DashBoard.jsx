@@ -15,9 +15,9 @@ function DashBoard() {
     const fetchData = async () => {
       try {
         const [turnoverRes, profitRes, newCustomerRes] = await Promise.all([
-          fetch("http://localhost:3001/api/turnover"),
-          fetch("http://localhost:3001/api/profit"),
-          fetch("http://localhost:3001/api/new-customer"),
+          fetch("http://localhost:3000/api/turnover"),
+          fetch("http://localhost:3000/api/profit"),
+          fetch("http://localhost:3000/api/newCustomer"),
         ]);
 
         if (!turnoverRes.ok || !profitRes.ok || !newCustomerRes.ok) {

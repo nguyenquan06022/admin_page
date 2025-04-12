@@ -29,7 +29,7 @@
   "customers": [
     {
       "id": 1,
-      "name": "Emily Wilsons",
+      "name": "Emily Wilson",
       "company": "Alpha Solutions",
       "orderValue": 767,
       "orderDate": "2023-04-27",
@@ -38,7 +38,7 @@
     },
     {
       "id": 2,
-      "name": "John Davis",
+      "name": "John Daviss",
       "company": "Alpha Solutions",
       "orderValue": 977,
       "orderDate": "2023-03-07",
@@ -593,6 +593,60 @@
       "orderDate": "2023-09-30",
       "status": "In-progress",
       "avatar": "images/Avatar (1).png"
+    },
+    {
+      "name": "quan",
+      "company": "quan",
+      "orderValue": 100,
+      "orderDate": "2023-03-07",
+      "status": "New",
+      "avatar": "/images/Avatar 313.png",
+      "id": 64
+    },
+    {
+      "name": "nana",
+      "company": "Alpha Solutions",
+      "orderValue": 200,
+      "orderDate": "2023-04-27",
+      "status": "Completed",
+      "avatar": "/images/Avatar 313.png",
+      "id": 65
+    },
+    {
+      "name": "d",
+      "company": "d",
+      "orderValue": 200,
+      "orderDate": "2023-04-27",
+      "status": "New",
+      "avatar": "/images/Avatar 313.png",
+      "id": 66
+    },
+    {
+      "name": "nguyenquan0602",
+      "company": "Alpha Solutions",
+      "orderValue": 300,
+      "orderDate": "2023-03-07",
+      "status": "New",
+      "avatar": "/images/Avatar 313.png",
+      "id": 67
+    },
+    {
+      "name": "okeoke",
+      "company": "Alpha Solutions",
+      "orderValue": 100,
+      "orderDate": "2023-04-27",
+      "status": "New",
+      "avatar": "/images/Avatar 313.png",
+      "id": 68
+    },
+    {
+      "name": "kk",
+      "company": "Alpha Solutions",
+      "orderValue": 100,
+      "orderDate": "2023-04-27",
+      "status": "New",
+      "avatar": "/images/Avatar 313.png",
+      "id": 69
     }
   ]
 }

@@ -1,7 +1,11 @@
 import React from "react";
 
 function Integrations() {
-  return <div>Integrations</div>;
+  return (
+    <div>
+      <h3>Integrations</h3>
+    </div>
+  );
 }
 
 export default Integrations;

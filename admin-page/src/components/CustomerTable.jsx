@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { toast, ToastContainer } from "react-toastify";
 const statusColors = {
   New: "#E0F2FF",
   "In-progress": "#FFF5E0",
@@ -17,6 +17,15 @@ const CustomerTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [editingCustomer, setEditingCustomer] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [newCustomer, setNewCustomer] = useState({
+    name: "",
+    company: "",
+    orderValue: "",
+    orderDate: "",
+    status: "New",
+    avatar: "/images/Avatar 313.png",
+  });
   const customersPerPage = 6;
 
   useEffect(() => {
@@ -24,7 +33,7 @@ const CustomerTable = () => {
   }, []);
 
   const fetchCustomers = () => {
-    fetch("http://localhost:3001/api/customers")
+    fetch("http://localhost:3000/api/customers")
       .then((res) => res.json())
       .then((data) => setCustomers(data))
       .catch((err) => console.error("Error fetching customers:", err));
@@ -35,10 +44,22 @@ const CustomerTable = () => {
     setIsModalOpen(true);
   };
 
+  const handleAddClick = () => {
+    setIsAddModalOpen(true);
+    setNewCustomer({
+      name: "",
+      company: "",
+      orderValue: "",
+      orderDate: "",
+      status: "New",
+      avatar: "/images/Avatar 313.png",
+    });
+  };
+
   const handleSave = async () => {
     try {
       await fetch(
-        `http://localhost:3001/api/customers/edit/${editingCustomer.id}`,
+        `http://localhost:3000/api/customers/edit/${editingCustomer.id}`,
         {
           method: "PUT",
           headers: {
@@ -49,14 +70,47 @@ const CustomerTable = () => {
       );
       setIsModalOpen(false);
       fetchCustomers();
+      toast.success("Edit user successfull");
     } catch (error) {
       console.error("Error updating customer:", error);
+    }
+  };
+
+  const handleAddCustomer = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/api/customers", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...newCustomer,
+          // Đảm bảo orderValue là số
+          orderValue: Number(newCustomer.orderValue),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      setIsAddModalOpen(false);
+      fetchCustomers();
+      toast.success("Add user successfull");
+    } catch (error) {
+      console.error("Error adding customer:", error);
+      // Có thể thêm thông báo lỗi cho người dùng ở đây
     }
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setEditingCustomer((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleAddCustomerChange = (e) => {
+    const { name, value } = e.target;
+    setNewCustomer((prev) => ({ ...prev, [name]: value }));
   };
 
   const totalPages = Math.ceil(customers.length / customersPerPage);
@@ -101,6 +155,7 @@ const CustomerTable = () => {
   return (
     <div style={{ overflowX: "auto", borderRadius: "8px", padding: "16px" }}>
       {/* Header */}
+      <ToastContainer></ToastContainer>
       <div className="d-flex" style={{ justifyContent: "space-between" }}>
         <div
           className="d-flex gap-2 flex-grow-1"
@@ -117,6 +172,7 @@ const CustomerTable = () => {
               borderColor: "rgb(244, 75, 134)",
               color: "rgb(244, 75, 134)",
             }}
+            onClick={handleAddClick}
           >
             Add User
           </button>
@@ -268,7 +324,7 @@ const CustomerTable = () => {
         </div>
       </div>
 
-      {/* Modal */}
+      {/* Edit Modal */}
       {isModalOpen && editingCustomer && (
         <div style={modalOverlayStyle}>
           <div style={modalContentStyle}>
@@ -338,6 +394,90 @@ const CustomerTable = () => {
                 }}
               >
                 Save
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Add Customer Modal */}
+      {isAddModalOpen && (
+        <div style={modalOverlayStyle}>
+          <div style={modalContentStyle}>
+            <h3>Add New Customer</h3>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "16px",
+                marginBottom: "16px",
+              }}
+            ></div>
+            <input
+              type="text"
+              name="name"
+              value={newCustomer.name}
+              onChange={handleAddCustomerChange}
+              placeholder="Customer Name"
+              style={inputStyle}
+            />
+            <input
+              type="text"
+              name="company"
+              value={newCustomer.company}
+              onChange={handleAddCustomerChange}
+              placeholder="Company"
+              style={inputStyle}
+            />
+            <input
+              type="number"
+              name="orderValue"
+              value={newCustomer.orderValue}
+              onChange={handleAddCustomerChange}
+              placeholder="Order Value"
+              style={inputStyle}
+            />
+            <input
+              type="text"
+              name="orderDate"
+              value={newCustomer.orderDate}
+              onChange={handleAddCustomerChange}
+              placeholder="Order Date (e.g., 2023-05-15)"
+              style={inputStyle}
+            />
+            <select
+              name="status"
+              value={newCustomer.status}
+              onChange={handleAddCustomerChange}
+              style={inputStyle}
+            >
+              <option value="New">New</option>
+              <option value="In-progress">In-progress</option>
+              <option value="Completed">Completed</option>
+            </select>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "flex-end",
+                gap: "8px",
+              }}
+            >
+              <button
+                onClick={() => setIsAddModalOpen(false)}
+                style={{ padding: "6px 12px" }}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleAddCustomer}
+                style={{
+                  padding: "6px 12px",
+                  backgroundColor: "#4CAF50",
+                  color: "#fff",
+                  border: "none",
+                }}
+              >
+                Add Customer
               </button>
             </div>
           </div>
